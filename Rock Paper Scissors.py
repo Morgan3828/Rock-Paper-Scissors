@@ -23,11 +23,12 @@ while answer != "no" and answer != "n":
     
     while winner == 0:
         userchoice = int( input("Rock, Paper, or Scissors ? :" +
-                                "1 for Rock, 2 for Paper, 3 for Scissors.")
+                                "1 for Rock, 2 for Paper, 3 for Scissors."))
         computer = random.randrange(len(OPTIONS))
+        print("The computer chose {}.".format( OPTIONS[computer]))
         if computer > userchoice:
             winner = 0
-        print("The computer chose {}.".format + OPTIONS[computer])
+            
         elif computer < userchoice:
             winner = 1
         elif computer == userchoice:
