@@ -14,23 +14,22 @@ OPTIONS = ( None,
             "Paper",
             "Scissors")
 
-# Conditional execution
-
-
-while answer != "no" and answer != "n":
-
+# Conditional Execution
 # While Loop
-    
+
+while answer != "no" and answer != "n":    
     while winner == 0:
-        userchoice = int( input("Rock, Paper, or Scissors ? :" +
-                                "1 for Rock, 2 for Paper, 3 for Scissors."))
+        userchoice = int( input("  1 for Rock, 2 for Paper, 3 for Scissors. " +
+                                " Rock, Paper, or Scissors ? :"))
         computer = random.randrange(len(OPTIONS))
         print("The computer chose {}.".format( OPTIONS[computer]))
+        
         if computer > userchoice:
             winner = 0
             
         elif computer < userchoice:
             winner = 1
+            
         elif computer == userchoice:
             winner = 0
 
