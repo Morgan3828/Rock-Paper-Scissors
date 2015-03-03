@@ -24,15 +24,10 @@ while answer != "no" and answer != "n":
         computer = random.randrange(len(OPTIONS))
         print("The computer chose {}.".format( OPTIONS[computer]))
         
-        if computer > userchoice:
-            winner = 0
-            
-        elif computer < userchoice:
-            winner = 1
-            
-        elif computer == userchoice:
-            winner = 0
-
+        if computer == 1 and userchoice == 1:
+            simpledialog
+            "It's a tie"
+            winner == 1
 
     answer = input("Do you want to play again (y/n)? ")
     answer = answer.lower()[0]
