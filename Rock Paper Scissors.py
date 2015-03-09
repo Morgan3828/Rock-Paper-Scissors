@@ -18,16 +18,14 @@ OPTIONS = ( None,
 # While Loop
 
 while answer != "no" and answer != "n":    
-    while winner == 0:
-        userchoice = int( input("  1 for Rock, 2 for Paper, 3 for Scissors. " +
+    userchoice = int( input("  1 for Rock, 2 for Paper, 3 for Scissors. " +
                                 " Rock, Paper, or Scissors ? :"))
-        computer = random.randrange(len(OPTIONS))
-        print("The computer chose {}.".format( OPTIONS[computer]))
+    computer = random.randrange(len(OPTIONS))
+    print("The computer chose {}.".format( OPTIONS[computer]))
         
-        if computer == 1 and userchoice == 1:
-            simpledialog
-            "It's a tie"
-            winner == 1
+    if computer == 1 and userchoice == 1:
+        simpledialog
+        "It's a tie"
 
     answer = input("Do you want to play again (y/n)? ")
     answer = answer.lower()[0]
