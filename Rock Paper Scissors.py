@@ -59,6 +59,7 @@ while answer != 2:
 
 # None Section
     else:
+            answer = 2
                 
 # While loop end        
     answer = simpledialog.askinteger("Do you want to play again (y/n)? ",
